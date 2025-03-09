@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Contacts</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="text-center mt-5">
+    <h1 class="font-bold font-serif text-3xl text-stone-600 mb-5">My Contacts</h1>
+    <label for="firstName">First Name</label>
+    <input
+      class="bg-stone-200 mb-2 ml-5"
+      type="text"
+      id="firstName"
+      required
+    /><br />
+    <label for="lastName">Last Name</label>
+    <input class="bg-stone-200 mb-2 ml-5" type="text" id="lastName" required />
+    <br />
+    <label for="phone">Phone Number</label>
+    <input class="bg-stone-200 mb-5 mr-3" type="number" id="phone" required />
+    <br />
+    <button
+      class="bg-sky-500 hover:bg-sky-700 text-teal-100 hover:text-yellow-100 rounded-2xl px-4 py-2 mb-5 mr-2"
+      id="submitButton"
+    >
+      Submit
+    </button>
+    <button
+      class="bg-green-600 hover:bg-green-400 text-teal-100 px-4 py-2 rounded-2xl mb-5 ml-2"
+      id="displayButton"
+    >
+      Display Data
+    </button>
+
+    <div id="display" class="flex flex-wrap space-x-5 justify-center"></div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
